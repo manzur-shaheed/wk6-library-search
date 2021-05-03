@@ -1,0 +1,30 @@
+/* using bootstrap styles */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vertical-center {
+    min-height: 100%;  
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bolder;
+    color: darkslategray;
+}
+
+h2 {
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.myDiv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>MS Library of Congress Search</title>
+</head>
+<body class="bg-primary">
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="bg-light col-lg-4 col-sm-12">
+                <div class="col p-0">
+                    <h1 class="p-2">Library of Congress Search Engine</h1>
+                </div>
+                <div class="col p-0">
+                    <form id="search">
+                        <input type="text" class="form-input w-100 m-2 p-2" id="searchText" placeholder="Search!">
+                        <select class="form-input w-100 m-2 p-2" id="format">
+                            <option value="" disabled selected>Select a format...</option>
+                            <option value="maps">Maps</option>
+                            <option value="audio">Audio</option>
+                            <option value="photos">Photos</option>
+                            <option value="manuscripts">Manuscripts</option>
+                            <option value="newspapers">Newspapers</option>
+                            <option value="film-and-videos">Film and Videos</option>
+                            <option value="notated-music">Notated Music</option>
+                            <option value="websites">Websites</option>
+                        </select>
+                        <button class="btn btn-info btn-block m-2 p-2 bg-success">Search </button>
+                        <button class="btn btn-info btn-block m-2 p-2 bg-danger">&larr;  Go Back </button>
+                    </form>
+                </div>
+            </div>
+            <div class="row col-lg-8 col-sm-12">
+                <div class="p-3">
+                    <h2>Showing results for <span id="search-string"></span></h2>
+                </div>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

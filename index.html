@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>MS Library of Congress Search</title>
 </head>
-<body>
+<body class="bg-info">
+    <div class="container container-fluid vertical-center">
+        <div class="row bg-light col-sm-12">
+            <div class="col-12 p-3">
+                <h1 class=text-center>Library of Congress Search</h1>
+            </div>
+            <div class="col-12 p-3">
+                <form id="search">
+                    <input type="text" class="form-input w-100 m-2 p-2" id="searchText" placeholder="Search!">
+                    <select class="form-input w-100 m-2 p-2" id="format">
+                        <option value="" disabled selected>Select a format...</option>
+                        <option value="maps">Maps</option>
+                        <option value="audio">Audio</option>
+                        <option value="photos">Photos</option>
+                        <option value="manuscripts">Manuscripts</option>
+                        <option value="newspapers">Newspapers</option>
+                        <option value="film-and-videos">Film and Videos</option>
+                        <option value="notated-music">Notated Music</option>
+                        <option value="websites">Websites</option>
+                    </select>
+                    <button class="btn btn-info btn-block m-2 p-2 bg-success">Click Me</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
