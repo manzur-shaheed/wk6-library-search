@@ -5,20 +5,22 @@ var searchEl = $('#search');
 searchEl.on('submit', searchLibraryMain);
 
 function searchLibraryMain(event) {
-    var serachText, formatText, queryStr;
+    var searchText, formatText, queryStr;
 
     event.preventDefault();
-    serachText = $('#searchText').val();
-    formatText = $('#format').val();
+    searchText = $('#searchText').val();
+    formatText = $('#formatText').val();
 
-    // console.log(serachText);
+    // console.log(searchText);
     // console.log(formatText);
-    if (serachText === '') {
+    if (searchText === '') {
         alert('Please enter a search text!');
         return;
     }
-    queryStr = "./results.html?searchText=" + serachText + "&format=" + formatText;
+    if (!formatText) {
+        formatText = '';
+    }
+    queryStr = "./results.html?searchText=" + searchText + "&format=" + formatText;
     location.assign(queryStr);
 }
 
-// result page section

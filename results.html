@@ -9,15 +9,15 @@
 </head>
 <body class="bg-primary">
     <div class="container container-fluid myDiv">
-        <div class="row">
-            <div class="bg-light col-lg-4 col-sm-12">
+        <div class="row myRow">
+            <div class="col bg-light col-lg-4 col-sm-12">
                 <div class="col p-0">
                     <h1 class="p-2">Library of Congress Search Engine</h1>
                 </div>
                 <div class="col p-0">
                     <form id="search">
                         <input type="text" class="form-input w-100 m-2 p-2" id="searchText" placeholder="Search!">
-                        <select class="form-input w-100 m-2 p-2" id="format">
+                        <select class="form-input w-100 m-2 p-2" id="formatText">
                             <option value="" disabled selected>Select a format...</option>
                             <option value="maps">Maps</option>
                             <option value="audio">Audio</option>
@@ -29,21 +29,21 @@
                             <option value="websites">Websites</option>
                         </select>
                         <button class="btn btn-info btn-block m-2 p-2 bg-success">Search </button>
-                        <button class="btn btn-info btn-block m-2 p-2 bg-danger">&larr;  Go Back </button>
+                        <a href="./index.html" class="btn btn-info btn-block m-2 p-2 bg-danger">&larr;  Go Back</a>
                     </form>
                 </div>
             </div>
-            <div class="row col-lg-8 col-sm-12">
+            <div class="col col-lg-8 col-sm-12">
                 <div class="p-3">
                     <h2>Showing results for <span id="search-string"></span></h2>
                 </div>
-                <div id="result"></div>
+                <div class='p-3' id="result"></div>
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/results.js"></script>
 </body>
 </html>
